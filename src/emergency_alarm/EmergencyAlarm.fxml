@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import java.util.ArrayList?>
+
+<fx:root fx:id="pane" prefHeight="479.0" prefWidth="206.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fill="#ffffff00" height="61.0" layoutX="43.0" layoutY="311.0" stroke="BLACK" strokeType="INSIDE" width="141.0" />
+      <Rectangle fill="#ffffff00" height="61.0" layoutX="43.0" layoutY="183.0" stroke="BLACK" strokeType="INSIDE" width="141.0" />
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="226.0">
+         <children>
+            <VBox alignment="CENTER" fillWidth="false" prefWidth="226.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EMERGENCY ALARM" textOrigin="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane fx:id="giveAlarmButtonPane" VBox.vgrow="NEVER">
+                     <children>
+                        <Circle layoutX="25.0" layoutY="25.0" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0">
+                           <effect>
+                              <DropShadow height="0.0" offsetX="3.0" offsetY="3.0" radius="0.0" width="0.0" />
+                           </effect>
+                        </Circle>
+                        <Circle fill="#a8abae" layoutX="25.0" layoutY="25.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Circle fill="WHITE" layoutX="25.0" layoutY="25.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Circle>
+                        <Circle fx:id="topButtonClickTarget" centerX="30.0" centerY="30.0" fill="TRANSPARENT" radius="30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="9.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <Label fx:id="topButtonLabel" alignment="CENTER" contentDisplay="CENTER" text="GIVE ALARM" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="-5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="topLightLabel" text="ALARM SENT TO">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="alarmsTo" alignment="CENTER" layoutX="269.0" layoutY="245.0" lineSpacing="2.0" text="STOKE-ON-TRENT SCC" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <HBox prefHeight="4.0" prefWidth="600.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Rectangle fx:id="t1" fill="SLATEGRAY" height="14.0" stroke="BLACK" strokeType="INSIDE" width="35.0">
+                           <effect>
+                              <InnerShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Rectangle>
+                        <Region prefWidth="30.0" />
+                        <Rectangle fx:id="t2" fill="SLATEGRAY" height="14.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="35.0">
+                           <effect>
+                              <InnerShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Rectangle>
+                        <Region layoutX="240.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="229.0" prefHeight="15.0" prefWidth="600.0">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Rectangle fx:id="t3" fill="SLATEGRAY" height="14.0" stroke="BLACK" strokeType="INSIDE" width="35.0">
+                           <effect>
+                              <InnerShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Rectangle>
+                        <Region prefWidth="30.0" />
+                        <Rectangle fx:id="t4" fill="SLATEGRAY" height="14.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="35.0">
+                           <effect>
+                              <InnerShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Rectangle>
+                        <Region layoutX="240.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="bottomLightLabel" layoutX="258.0" layoutY="220.0" text="ALARM RECEIVED FROM">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="alarmsFrom" alignment="CENTER" layoutX="240.0" layoutY="233.0" lineSpacing="2.0" text="STOKE-ON-TRENT SCC" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <HBox layoutX="10.0" layoutY="243.0" prefHeight="4.0" prefWidth="600.0">
+                     <children>
+                        <Region prefHeight="20.0" HBox.hgrow="ALWAYS" />
+                        <Rectangle fx:id="b1" fill="SLATEGRAY" height="14.0" stroke="BLACK" strokeType="INSIDE" width="35.0">
+                           <effect>
+                              <InnerShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Rectangle>
+                        <Region prefHeight="0.0" prefWidth="30.0" />
+                        <Rectangle fx:id="b2" fill="SLATEGRAY" height="14.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="35.0">
+                           <effect>
+                              <InnerShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Rectangle>
+                        <Region layoutX="240.0" layoutY="10.0" prefHeight="20.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="267.0" prefHeight="15.0" prefWidth="600.0">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Rectangle fx:id="b3" fill="SLATEGRAY" height="14.0" stroke="BLACK" strokeType="INSIDE" width="35.0">
+                           <effect>
+                              <InnerShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Rectangle>
+                        <Region prefWidth="30.0" />
+                        <Rectangle fx:id="b4" fill="SLATEGRAY" height="14.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="35.0">
+                           <effect>
+                              <InnerShadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Rectangle>
+                        <Region layoutX="240.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <AnchorPane fx:id="giveAlarmButtonPane1" layoutX="10.0" layoutY="58.0">
+                     <children>
+                        <Circle layoutX="25.0" layoutY="25.0" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0">
+                           <effect>
+                              <DropShadow height="0.0" offsetX="3.0" offsetY="3.0" radius="0.0" width="0.0" />
+                           </effect>
+                        </Circle>
+                        <Circle fill="#a8abae" layoutX="25.0" layoutY="25.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                        <Circle fill="WHITE" layoutX="25.0" layoutY="25.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Circle>
+                        <Circle fx:id="bottomButtonClickTarget" fill="TRANSPARENT" layoutX="25.0" layoutY="25.0" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0">
+                           <effect>
+                              <DropShadow height="0.0" offsetX="3.0" offsetY="3.0" radius="0.0" width="0.0" />
+                           </effect>
+                        </Circle>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <Label fx:id="bottomButtonLabel" alignment="CENTER" text="ACKNOWLEDGE ALARM" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </VBox>
+         </children>
+      </StackPane>
+      <fx:define>
+            <ArrayList fx:id="topLightBox">
+                <fx:reference source="t1" />
+                <fx:reference source="t2" />
+                <fx:reference source="t3" />
+                <fx:reference source="t4" />
+            </ArrayList>
+      </fx:define>
+      <fx:define>
+            <ArrayList fx:id="bottomLightBox">
+                <fx:reference source="b1" />
+                <fx:reference source="b2" />
+                <fx:reference source="b3" />
+                <fx:reference source="b4" />
+            </ArrayList>
+      </fx:define>
+   </children>
+</fx:root>
